@@ -1,0 +1,7 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#MainScreen{
+	-fx-pref-height: 400;
+	-fx-pref-width: 900;
+	
+}
