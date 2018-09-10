@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: powderblue;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <DatePicker layoutX="114.0" layoutY="261.0" prefHeight="26.0" prefWidth="181.0" />
+      <DatePicker layoutX="114.0" layoutY="134.0" prefHeight="26.0" prefWidth="181.0" promptText="Data de nascimento" />
+   </children>
+</Pane>
