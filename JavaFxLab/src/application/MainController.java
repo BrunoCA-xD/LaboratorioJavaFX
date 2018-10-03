@@ -1,12 +1,16 @@
 package application;
 
-import javafx.beans.property.BooleanProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.skin.TextFieldSkin;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 
 public class MainController {
 
@@ -14,6 +18,10 @@ public class MainController {
 	private Button btnTest;
 	@FXML
 	private PasswordField txtPass;
+	@FXML
+	private AnchorPane root;
+	@FXML
+	private ListView<Pane> lstView;
 
 	@FXML
 	ToggleButton btnToggle;
@@ -24,11 +32,19 @@ public class MainController {
 		tx = new textSkin(txtPass);
 		tx.setDoMask(true);
 		txtPass.setSkin(tx);
-		
-		
+
+		// stretching
 	}
 
 	public void btnTestClicked() {
+
+		ObservableList<Pane> observableLst = FXCollections.observableArrayList();
+		observableLst.add(root);
+
+		lstView.setItems(observableLst);
+	}
+
+	public void btnToggleClicked() {
 		tx.setDoMask(!btnToggle.isSelected());
 	}
 }
