@@ -246,19 +246,43 @@
 
 }
 
-.asd>*{
-	-fx-pref-width: 100.0px 
-}
-
 .arrow-button{
 	-fx-background-color: transparent ;
 }
 .arrow-button:hover{
 	-fx-background-color: green ;
 }
+
+
 .scroll-pane, .viewport{
 	-fx-background-color: transparent ;
+	-fx-pref-width: 100.0%;
 }
 
+/*******************************************************************************
+ *                                                                             *
+ * Dinamic construction                                                        *
+ *                                                                             *
+ ******************************************************************************/
+
+.activityItem{
+
+	-fx-border-color: red;
+	-fx-background-color: lightgreen;
+	-fx-border-radius: 15;
+	-fx-background-radius: 15;
+}
+
+.activityItem:hover{
+
+	-fx-background-color: #ff5598;
+}
+.activityItem:selected{
+	-fx-background-color: #666f98 !important;
+}
+.activityItemselected{
+
+	-fx-background-color: #666f98 !important;
+}
 
 

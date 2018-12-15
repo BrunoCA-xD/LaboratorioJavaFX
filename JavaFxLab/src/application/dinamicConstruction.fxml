@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DinamicConstructionController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="103.0" minWidth="103.0" prefWidth="103.0" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="199.0" prefWidth="199.0" />
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="298.0" prefWidth="298.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="227.2" prefWidth="287.99998779296874" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="621.6" prefWidth="688.8000122070313" />
   </columnConstraints>
   <rowConstraints>
       <RowConstraints maxHeight="17.0" minHeight="17.0" prefHeight="17.0" vgrow="SOMETIMES" />
@@ -29,22 +29,15 @@
             <Pane layoutX="7.0" layoutY="14.0" prefHeight="25.0" prefWidth="181.0" style="-fx-border-color: red;" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" />
             <Pane layoutX="9.0" layoutY="324.0" prefHeight="45.0" prefWidth="181.0" style="-fx-border-color: red;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0">
                <children>
-                  <Button layoutX="65.0" layoutY="10.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="101.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="Button" />
                </children>
             </Pane>
-            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutX="9.0" layoutY="48.0" prefHeight="256.0" prefWidth="185.0" style="-fx-border-color: red;" AnchorPane.bottomAnchor="79.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="48.0">
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutX="9.0" layoutY="48.0" prefHeight="256.0" prefWidth="185.0" style="-fx-border-color: red;" vbarPolicy="NEVER" AnchorPane.bottomAnchor="79.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="48.0">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
                <content>
-                  <FlowPane hgap="5.0" maxWidth="-Infinity" orientation="VERTICAL" prefWidth="200.0" rowValignment="TOP" styleClass="asd" vgap="5.0">
-                     <children>
-                        <Pane prefHeight="44.0" prefWidth="157.0" />
-                        <Pane prefHeight="44.0" prefWidth="156.0" />
-                        <Pane prefHeight="44.0" prefWidth="156.0" />
-                        <Pane prefHeight="44.0" prefWidth="156.0" />
-                        <Pane prefHeight="44.0" prefWidth="156.0" />
-                     </children>
+                  <FlowPane fx:id="lstActivity" columnHalignment="CENTER" maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="245.0" prefWidth="345.0" prefWrapLength="345.0" vgap="5.0">
                      <padding>
                         <Insets left="5.0" right="5.0" />
                      </padding></FlowPane>
