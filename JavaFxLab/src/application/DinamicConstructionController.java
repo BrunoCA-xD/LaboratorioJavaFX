@@ -8,16 +8,11 @@ import java.util.HashMap;
 import java.util.Random;
 import java.util.ResourceBundle;
 
-import com.sun.javafx.tools.packager.bundlers.Bundler.Bundle;
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
-import javafx.scene.layout.Pane;
 
 public class DinamicConstructionController implements Initializable {
 

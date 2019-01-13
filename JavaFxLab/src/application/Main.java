@@ -22,6 +22,7 @@ public class Main extends Application {
 			URL url = new File(getClass().getResource("dinamicConstruction.fxml").getPath()).toURI().toURL();
 			root = FXMLLoader.load(url);
 			Scene scene = new Scene(root);
+			
 			scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
